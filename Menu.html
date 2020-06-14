@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="shourtcut icon" type="image/svg" href="img/Květina.png">
+    <link rel="stylesheet" href="Poznavacka.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>MGV poznávačka</title>
+</head>
+
+<style>
+
+
+h1{
+    text-align: center;
+    font-size: 90px;
+}
+
+/* Tlačítka */ 
+.Buttons_container{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.Button{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #226b29;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    transition: color 300ms; 
+    transition: background-color 300ms; 
+    display: inline-block;
+    
+}
+
+
+.left{
+    margin-right: 80px;
+}
+
+.right{
+    margin-left: 50px;
+
+}
+
+.Button:hover{
+    color: #226b29;
+    background-color: white;
+}
+
+sub{
+    font-size: 20px;
+}
+
+
+</style>
+
+<body>
+    <header><a href="Menu.html"><img class="icon" src="img/Home.png" alt=""></a><a href="https://www.mgvsetin.cz/index.php" target="_blank"><img class="mgv" src="img/MGV.png" alt=""></a></header>
+
+    <div style="margin-top: 200px;">
+        <h1 id="nadpis1">Masarykovo gymnánzium Vsetín</h1>
+        <h1 id="nadpis2">Poznávačka rostlin</h1>
+    </div>
+
+    <div class="Buttons_container">
+        <a id="left" class="left Button " href="Procvicovani.html" id="Procviceni">Procvičení<sub> BETA</sub></a>
+        <a id="right" class="right Button" href="Studium.html" id="Studium">Studium</a>
+    </div>
+    
+    <footer><a class="copyright" href="https://www.linkedin.com/in/hynekjanac/" target="_blank">© 2020 Hynek Janáč</a> <a href="Novinky.html" class="version">v.2.0</a></footer>
+</body>
+
+<script>
+    function Desktop_layout(){
+    // Optimize layout for desktops
+    document.getElementById("nadpis1").style.fontSize = "90px";
+    document.getElementById("nadpis2").style.fontSize = "90px";
+    document.getElementById("right").style.marginLeft = "50px";
+    document.getElementById("right").style.marginRight = "0px";
+    
+}
+
+
+function Mobile_layout(){
+    // Optimize layout for mobile
+    document.getElementById("nadpis1").style.fontSize = "50px";
+    document.getElementById("nadpis2").style.fontSize = "50px";
+    document.getElementById("right").style.marginLeft = "50px"; 
+    document.getElementById("right").style.marginRight = "110px";
+    
+}
+
+// Layout gets optimized if the screen widht is lower or higher than 1100px
+function Layout_handler(){
+    if (window.innerWidth > 1100){
+        Desktop_layout();
+    }
+    if (window.innerWidth < 1100){
+        Mobile_layout();
+    } 
+    
+
+
+}
+
+// Script activates on refresh or on when you resize page
+window.onload = Layout_handler;
+window.onresize = Layout_handler;
+Layout_handler();
+
+</script>
+
+</html>

@@ -1,0 +1,67 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 10%;
+    background: url(img/Květiny.jpg);
+    z-index: 1;
+}
+
+.icon{
+    height: 110%;
+    margin-left: 10px;
+    opacity: 0.7;
+    transition: opacity 333ms; 
+}
+
+.mgv{
+    margin-top: 6px;
+    margin-right: 10px;
+    height: 90%;
+    float: right;
+    opacity: 0.7;
+    transition: opacity 333ms; 
+}
+
+
+.icon:hover{
+    opacity: 1;
+}
+
+.mgv:hover{
+    opacity: 1;
+}
+
+.copyright{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Roboto;
+    color: white;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    text-decoration: none;
+}
+
+.version{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Roboto;
+    color: white;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    right: 1px;
+    text-decoration: none;
+   
+}
+
+body{
+    background-color: #32a039;
+    font-family: Roboto;
+    color: white;
+
+}
