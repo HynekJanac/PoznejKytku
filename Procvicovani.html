@@ -10,105 +10,15 @@
     <title>Procvičování</title>
 </head>
 
-<style>
-    .progressbar_background{
-        position: absolute;
-        width: 1520px;
-        height: 20px;
-        left: 50px;
-        top: 140px;
-
-        background: #226b29;
-        border-radius: 22.5px;
-    }
-    .progress{
-        position: absolute;
-        width: 0px;
-        height: 20px;
-        left: 50px;
-        top: 124px;
-        transition: width 230ms;
-
-        background: #ffd722;
-        border-radius: 22.5px;
-    }
-
-    .progress_numbers{
-        position: fixed;
-        right: 35px;
-        height: 20px;
-        top: 22px;
-        font-size: 75px;
-    }
-
-    .image_box{
-        left: 100px;
-        position: fixed;
-        bottom: 190px;
-        height: 600px;
-        width: 700px;
-        text-align: center;
-    }
-    .options{
-            position: fixed;
-            right: 15%;
-            bottom: 190px;
-            height: 600px;
-            width: 700px;
-            text-align: center;
-
-        }
-    .image{
-        height: 500px;
-        margin-top: 50px;
-        border-radius: 5px;
-        height: 550px;}
-
-    
-
-    .btn{
-        background-color: #226b29;
-        color: white;
-        margin: 60px 20px 10px 20px;
-        width: 80%;
-        height: 100px;
-        font-size: 30px;
-        border-radius: 83px;
-        border: none;
-        transition: color 300ms; 
-        transition: background-color 300ms; 
-    }
-
-    .next{
-        margin: 120px 20px 10px 20px;
-    }
-
-    .btn:hover{
-        color: #226b29;
-        background-color: white;
-    }
-
-    .TF{
-        position: absolute;
-        margin-top: 70px;
-        height: 80px;
-    }
-
-    .vysledky{
-        display: none;
-        font-size: 70px;
-        margin-top: auto;
-        text-align: center;
-    }
-
-</style>
-
-
-
-
-
 <body>
-    <header><a href="Menu.html"><img class="icon" src="img/Home.png" alt=""></a><a href="https://www.mgvsetin.cz/index.php" target="_blank"><img class="mgv" src="img/MGV.png" alt=""></a></header>
+    <header>
+        <a href="Menu.html">
+            <img class="icon menu" src="img/Home.png" alt="">
+        </a>
+        <a href="https://www.mgvsetin.cz/index.php" target="_blank">
+            <img class="icon mgv" src="img/MGV.png" alt="">
+        </a>
+    </header>
 
     <div class="progressbar_background" id="progress_background"></div>
     <p class="progress" id="progress"></p>

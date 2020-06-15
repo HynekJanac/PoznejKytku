@@ -1,3 +1,5 @@
+/* All pages */
+
 header{
     position: fixed;
     width: 100%;
@@ -8,11 +10,16 @@ header{
     z-index: 1;
 }
 
-.icon{
+body{
+    background-color: #32a039;
+    font-family: Roboto;
+    color: white;
+
+}
+
+.menu{
     height: 110%;
     margin-left: 10px;
-    opacity: 0.7;
-    transition: opacity 333ms; 
 }
 
 .mgv{
@@ -20,23 +27,21 @@ header{
     margin-right: 10px;
     height: 90%;
     float: right;
-    opacity: 0.7;
-    transition: opacity 333ms; 
+    
 }
 
+.icon{
+    opacity: 0.7; 
+    transition: opacity 330ms; 
+}
 
 .icon:hover{
-    opacity: 1;
-}
-
-.mgv:hover{
     opacity: 1;
 }
 
 .copyright{
     font-weight: bold;
     font-size: 30px;
-    font-family: Roboto;
     color: white;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -48,7 +53,6 @@ header{
 .version{
     font-weight: bold;
     font-size: 30px;
-    font-family: Roboto;
     color: white;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -59,9 +63,248 @@ header{
    
 }
 
-body{
-    background-color: #32a039;
-    font-family: Roboto;
-    color: white;
+@media (max-width: 810px){
+    .version{
+        font-size: 20px
+    }
+
+    .copyright{
+        font-size: 20px ;
+    }
 
 }
+
+
+/* Menu */
+
+.nadpis{
+    text-align: center;
+    font-size: 90px;
+}
+
+.Buttons_container{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button{
+    color: white;
+    background-color: #226b29;
+    transition: color 300ms; 
+    transition: background-color 300ms;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 20px;
+    padding: 40px;
+     
+    
+}
+
+.Button:hover{
+    color: #226b29;
+    background-color: white;
+}
+
+@media (max-width: 810px){
+    .Buttons_container{
+        flex-direction: column;
+    }
+
+    .Button:last-of-type{
+        margin-top: 40px;
+    }
+    .nadpis{
+        font-size: 60px;
+    }
+
+}
+
+/* Procvičení */
+.progressbar_background{
+    position: absolute;
+    width: 1520px;
+    height: 20px;
+    left: 50px;
+    top: 140px;
+
+    background: #226b29;
+    border-radius: 22.5px;
+}
+.progress{
+    position: absolute;
+    width: 0px;
+    height: 20px;
+    left: 50px;
+    top: 124px;
+    transition: width 230ms;
+
+    background: #ffd722;
+    border-radius: 22.5px;
+}
+
+.progress_numbers{
+    position: fixed;
+    right: 35px;
+    height: 20px;
+    top: 22px;
+    font-size: 75px;
+}
+
+.image_box{
+    left: 100px;
+    position: fixed;
+    bottom: 190px;
+    height: 600px;
+    width: 700px;
+    text-align: center;
+}
+
+.options{
+        position: fixed;
+        right: 15%;
+        bottom: 190px;
+        height: 600px;
+        width: 700px;
+        text-align: center;
+
+    }
+.image{
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 550px;}
+
+
+
+.btn{
+    background-color: #226b29;
+    color: white;
+    margin: 60px 20px 10px 20px;
+    width: 80%;
+    height: 100px;
+    font-size: 30px;
+    border-radius: 83px;
+    border: none;
+    transition: color 300ms; 
+    transition: background-color 300ms; 
+}
+
+.next{
+    margin: 120px 20px 10px 20px;
+}
+
+.btn:hover{
+    color: #226b29;
+    background-color: white;
+}
+
+.TF{
+    position: absolute;
+    margin-top: 70px;
+    height: 80px;
+}
+
+.vysledky{
+    display: none;
+    font-size: 70px;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Studium */
+      
+.text{
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    text-decoration: none;
+}
+.content{
+    text-align: center;
+}
+.Plants{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    width: 500px;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    transition: opacity 150ms; 
+    
+}
+
+.Plants:hover{
+    opacity: 1;
+    z-index: -1;
+}
+
+   
+h1{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    margin-top: auto;}
+
+h2{
+    text-align: center;
+    margin-top: 0px; 
+    margin-bottom: 50px;
+}
+
+.caption{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+@media(max-width: 500px){
+    .Plants{
+        width: 340px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px ;
+    }
+
+}
+
+/* Novinky */
+.verze:first-of-type{
+    margin-top: 100px;
+}
+
+.verze{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.novina{
+    text-align: left;
+    margin-left: 23%;
+    font-size: 25px;
+}
+
+@media(max-width: 400px){
+    .verze{
+        margin-left: 10%;
+    }
+    .novina{
+        font-size: 20px;
+        margin-left: 13%;
+    }
+}
+
