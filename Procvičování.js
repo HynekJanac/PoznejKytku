@@ -116,7 +116,7 @@ function Quiz() {
 
     index += 1;
 
-    if (index > 146) {
+    if (index > 145) {
         document.getElementById("progress_background").style.display = "none";
         document.getElementById("progress").style.display = "none";
         document.getElementById("progress_numbers").style.display = "none";
@@ -127,8 +127,8 @@ function Quiz() {
         document.getElementById("body").style.display = "block";
         document.getElementById("body").innerHTML = "počet bodů " + (right - wrong).toString() + "/145";
     }
-    document.getElementById("progress").style.width = (index * 10.34013605).toString() + "px";
-    document.getElementById("progress_numbers").innerHTML = index.toString() + "/144";
+    document.getElementById("progress").style.width = (index * 0.5862068966).toString() + "%";
+    document.getElementById("progress_numbers").innerHTML = index.toString() + "/145";
 }
 
 Quiz();
