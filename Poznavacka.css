@@ -1,4 +1,4 @@
-/* All pages */
+/* ----------- All pages ----------- */
 
 header{
     position: fixed;
@@ -79,7 +79,7 @@ body{
 }
 
 
-/* Menu */
+/* ----------- Menu -----------*/
 
 .nadpis{
     text-align: center;
@@ -131,7 +131,7 @@ body{
 
 }
 
-/* Procvičení */
+/* ----------- Procvičení ----------- */
 .progressbar_background{
     position: absolute;
     width: 85%;
@@ -206,7 +206,7 @@ body{
 }
 
 .next{
-    margin: 120px 20px 10px 20px;
+    margin: 120px 15px 10px 20px;
 }
 
 .btn:hover{
@@ -235,41 +235,49 @@ body{
     font-size: 50px;
 }
 
+
+
 @media(max-width:1200px){
+    .image_box{
+        width: 300px;
+    }
+
+    .btn{
+        width: 60%;
+        height: 80px;
+        font-size: 25px;
+    }
+
+
     .progress_numbers{
-        display: none;
-    }
-
-    .progressbar_background{
-        display: none;
-    }
-
-    .progress{
-        display: none;
-    }
-    .options{
-        display: none;
-        
-    }
-
-    .next{
-        display: none;
+        font-size: 50px;
+        right: 0px;
+        top: 60px;
     }
 
     .TF{
-       display: none;
-    }
-
-    .image{
-        display: none;
-    }
-
-    .error{
-        display: block;
+        height: 65px;
+        margin-left: 20px;
     }
 }
 
-/* Studium */
+@media (max-height: 900px){
+    .image_box{
+        width: 300px;
+    }
+
+    .options{
+        bottom: 100px;
+        margin-left: 25px;
+        right: 300px;
+    }
+
+    .next{
+        margin-top: 50px;
+    }
+}
+
+/* ----------- Studium ----------- */
     
 .colors{
     text-align: center;
