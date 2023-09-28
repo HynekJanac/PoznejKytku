@@ -116,16 +116,14 @@ function Quiz() {
 
     index += 1;
 
-    if (index > 145) {
-        document.getElementById("progress_background").style.display = "none";
-        document.getElementById("progress").style.display = "none";
-        document.getElementById("progress_numbers").style.display = "none";
-
-        document.getElementById("image_box").style.display = "none";
-        document.getElementById("options").style.display = "none";
+    if (index > 5) {
+        document.getElementsByClassName("Progress-HUD")[0].style.display = "none";
+        document.getElementsByClassName("Zadani-a-Odpovedi")[0].style.display = "none";
+        
         document.getElementById("vysledky").style.display = "block";
-        document.getElementById("body").style.display = "block";
-        document.getElementById("body").innerHTML = "počet bodů " + (right - wrong).toString() + "/145";
+
+        document.getElementById("vysledky-procenta").innerHTML = "procentuální úspěšnost: " + String(Math.round(right/145 * 100)) + "%"
+        document.getElementById("vysledky-hodnota").innerHTML = "počet bodů: " + (right - wrong).toString() + "/145";
     }
     document.getElementById("progress").style.width = (index * 0.6896551724).toString() + "%";
     document.getElementById("progress_numbers").innerHTML = index.toString() + "/145";
