@@ -4,56 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shourtcut icon" type="image/svg" href="img/Test.png">
+    <link  rel="shourtcut icon" type="image/svg" href="img/Favicon.svg">
     <link rel="stylesheet" href="Poznavacka.css">
     <script defer src="Procvičování.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Procvičování</title>
 </head>
 
 <body>
     <header>
-        <a href="Menu.html">
-            <img class="icon menu" src="img/Home.png" alt="">
-        </a>
-        <a href="https://www.mgvsetin.cz/index.php" target="_blank">
-            <img class="icon mgv" src="img/MGV.png" alt="">
-        </a>
+        <div><a href="/"><img class="icon menu" src="img/Logo.svg" alt=""></a></div>
+        <div><a href="https://www.mgvsetin.cz/" target="_blank"><img class="icon mgv" src="img/MGV.svg" alt=""></a></div>
     </header>
-
-    <div class="progressbar_background" id="progress_background"></div>
-    <p class="progress" id="progress"></p>
-    <p class="progress_numbers" id="progress_numbers">0/144</p>
-
-    <div class="image_box" id="image_box">
-        <img class="image" src="img/Květiny.jpg" alt="" id="image">
-    </div>
-
+    <main class="Procvicovani">
+        <div class="Progress-HUD">
+            <div class="Progress-Bar">
+                <div class="progressbar_background" id="progress_background">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+                <div class="progress_numbers" id="progress_numbers">0/144</div>
+        </div> 
+        
+        <div class="Zadani-a-Odpovedi">
+            <div class="image_box">
+                <img class="image" src="img/Květiny.jpg" alt="" id="image">
+            </div>
+            
+            
+            <div class="options" id="options">
+                <div class="option">
+                    <button class="btn" id="option0"></button>
+                    <img src="img/Right.png" alt="" class="right TF" id="right0">
+                    <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong0">
+                </div>
+                <div class="option">
+                    <button class="btn" id="option1"></button>
+                    <img src="img/Right.png" alt="" class="right TF" id="right1">
+                    <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong1">
+                </div>
+                <div class="option">
+                    <button class="btn" id="option2"></button>
+                    <img src="img/Right.png" alt="" class="right TF" id="right2">
+                    <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong2">
+                </div>
+                <div class="option">
+                    <button class="btn next" id="Next" onclick="Quiz()">další otázka</button>
+                </div>
+               
+                
+            </div>
+        </div>
+        
+    </main>
+    
     <div class="vysledky" id="vysledky">
         <h1 class="výsledky_nadpis">Výsledky</h1>
         <p id="body"></p>
     </div>
 
-    <div class="error">
-        <p>Bohužel "Procvičování" je dostupné jen na obrazovkách širších než 1500px</p>
-    </div>
-
-
-    <div class="options" id="options">
-        <button class="btn" id="option0"></button>
-        <img src="img/Right.png" alt="" class="right TF" id="right0">
-        <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong0">
-        <button class="btn" id="option1"></button>
-        <img src="img/Right.png" alt="" class="right TF" id="right1">
-        <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong1">
-        <button class="btn" id="option2"></button>
-        <img src="img/Right.png" alt="" class="right TF" id="right2">
-        <img src="img/Wrong.png" alt="" class="wrong TF" id="wrong2">
-        <button class="btn next" id="Next" onclick="Quiz()">další otázka</button>
-    </div>
-
-    <footer><a class="copyright" href="https://www.linkedin.com/in/hynekjanac/" target="_blank">Hynek Janáč</a>
-        <a href="Novinky.html" class="version" target=>v.2.5</a></footer>
+    <footer> 
+        <a class="copyright" href="https://www.hynekjanac.com" target="_blank">Hynek Janáč</a> 
+        <a href="Novinky.html" class="version" target=>v.3.0</a>
+    </footer>
 
 </body>
 
