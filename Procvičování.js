@@ -122,18 +122,18 @@ function Quiz() {
         
         document.getElementById("vysledky").style.display = "block";
 
-        document.getElementById("vysledky-procenta").innerHTML = "procentuální úspěšnost: " + String(Math.round(right/145 * 100)) + "%"
+        document.getElementById("vysledky-procenta").innerHTML = "procentuální úspěšnost: " + String(Math.round((right - wrong)/145 * 100)) + "%"
         document.getElementById("vysledky-hodnota").innerHTML = "počet bodů: " + String(right - wrong) + "/145";
         
-        if (Math.round(right/145 * 100) <= 30){
+        if (Math.round((right - wrong)/145 * 100) <= 30){
             document.getElementById("gif").src = "/img/meow-sad.gif"
         }
         
-        if (Math.round(right/145 * 100) >= 50){
+        if (Math.round((right - wrong)/145 * 100) >= 50){
             document.getElementById("gif").src = "/img/cat-displeased-why.gif"
         }
 
-        if (Math.round(right/145 * 100) >= 80){
+        if (Math.round((right - wrong)/145 * 100) >= 80){
             document.getElementById("gif").src = "/img/cat-happy.gif"
         }
 
