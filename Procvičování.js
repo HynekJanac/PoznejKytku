@@ -116,7 +116,7 @@ function Quiz() {
 
     index += 1;
 
-    if (index > 5) {
+    if (index > 145) {
         document.getElementsByClassName("Progress-HUD")[0].style.display = "none";
         document.getElementsByClassName("Zadani-a-Odpovedi")[0].style.display = "none";
         
