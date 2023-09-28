@@ -221,7 +221,9 @@ header{
     font-size: 20px;
 }
 
-
+.gif{
+    border-radius: 20px;
+}
 
 
 
@@ -373,6 +375,9 @@ h2{
     }
     .novina{
         font-size: 20px;
+    }
+    .gif{
+        width: 90%;
     }
 
 }
