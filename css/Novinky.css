@@ -1,0 +1,20 @@
+.verze:first-of-type{
+    margin-top: 100px;
+}
+
+.verze{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.novina{
+    text-align: left;
+    margin-left: 23%;
+    font-size: 25px;
+}
+@media (max-width: 720px) {
+
+    .novina{
+        font-size: 20px;
+    }
+}

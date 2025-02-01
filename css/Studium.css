@@ -1,0 +1,66 @@
+.colors{
+    text-align: center;
+}
+
+
+.colorpick{
+    margin: 0 5px 15px 5px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.colorpick:hover, .colorpick:focus{
+    transform: scale(1.1);
+}
+
+.text{
+    color: var(--text-color);
+    font-family: var(--default-font);
+    text-align: center;
+    text-decoration: none;
+}
+.content{
+    text-align: center;
+}
+.Plants{
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    width: 500px;
+    opacity: 0.9;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    transition: opacity 150ms; 
+    
+}
+
+.Plants:hover, .Plants:focus{
+    opacity: 1;
+    z-index: -1;
+}
+
+   
+h1{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    margin-top: auto;}
+
+h2{
+    text-align: center;
+    margin-top: 0px; 
+    margin-bottom: 50px;
+}
+
+.caption{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+@media (max-width: 720px) {
+
+
+}
